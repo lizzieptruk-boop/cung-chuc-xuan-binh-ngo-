@@ -1,0 +1,107 @@
+body {
+    background: #800000;
+    /* Hình nền Tết có hoa mai đào, bao lì xì, đồng xu */
+    background-image: url('https://img.freepik.com/free-vector/flat-vietnamese-new-year-background_23-2148810235.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+.tet-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa theo chiều ngang */
+    justify-content: center;
+    width: 100%;
+}
+
+.main-title {
+    color: #ffcc00;
+    font-size: 3rem;
+    text-shadow: 2px 4px 15px rgba(0,0,0,0.7);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.wheel-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#wheel {
+    border: 12px solid #ffcc00;
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgba(255, 204, 0, 0.4);
+    background-color: #fff;
+}
+
+.pointer {
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    color: #ffcc00;
+    z-index: 10;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+#spin-btn {
+    padding: 15px 60px;
+    background: linear-gradient(180deg, #ff4d4d 0%, #cc0000 100%);
+    color: white;
+    border: 3px solid #ffcc00;
+    border-radius: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+
+#spin-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+}
+
+/* Popup hiệu ứng */
+.popup {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.9);
+    display: flex; justify-content: center; align-items: center;
+    z-index: 100;
+}
+
+.popup-content {
+    background: #a30000;
+    border: 5px solid #ffcc00;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 500px;
+    color: #ffcc00;
+}
+
+.hidden { display: none !important; }
+
+#close-btn {
+    margin-top: 25px;
+    padding: 10px 30px;
+    background: #ffcc00;
+    color: #800000;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
