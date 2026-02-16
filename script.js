@@ -8,7 +8,7 @@ const audio = document.getElementById("firework-audio");
 const wishes = [
 "🧧 Chúc năm mới an khang, tâm sáng – trí vững – đường dài thênh thang, việc gì cũng hanh thông",
 "🧧 Năm mới chúc gia đình luôn bình an, nhà cửa ấm êm, tài lộc gõ cửa mỗi ngày",
-"🧧 Chúc một năm đủ sức khỏe để sống trọn, đủ bình an để an lòng và đủ thành công để tự hào",
+"🧧 Chúc một năm đủ sức khỏe để sống trọn, đủ bình an để an lòng và đủ thành công để tự hào",
 "🧧 Mong năm mới mang đến nhiều cơ hội mới, quyết định đúng đắn và những bước tiến vững vàng",
 "🧧 Chúc mọi dự định ấp ủ đều nảy mầm, mọi cố gắng đều được đền đáp xứng đáng",
 "🧧 Năm mới vạn sự như ý, tâm thế an nhiên, sự nghiệp thăng hoa, gia đạo thuận hòa",
@@ -59,3 +59,4 @@ spinBtn.disabled = false;
 
 document.getElementById("close-btn").onclick = () => popup.classList.add("hidden");
 draw();
+
